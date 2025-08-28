@@ -1,0 +1,98 @@
+/* Base Styling */
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Glass UI Panel */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Chart Container */
+#sentimentChart {
+  max-width: 100%;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* Review Card Styling */
+.review-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 6px solid #38bdf8;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Sentiment color highlights */
+.sentiment-positive {
+  color: #10b981; /* Green */
+  font-weight: 600;
+}
+.sentiment-neutral {
+  color: #3b82f6; /* Blue */
+  font-weight: 600;
+}
+.sentiment-negative {
+  color: #ef4444; /* Red */
+  font-weight: 600;
+}
+
+/* Buttons */
+button {
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Download button enhancement */
+#downloadBtn {
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Toast / Alert (if needed in JS) */
+.toast {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #22c55e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
